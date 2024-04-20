@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>smarter_hello_world</name>
+  <name>smarter_image_processing</name>
   <version>0.0.1</version>
-  <description>The smarter_hello_world package</description>
-  <maintainer email="andreas.persson@oru.se">Andreas Persson</maintainer>
+  <description>The smarter_image_processing package</description>
+  <maintainer email="andreas.persson@oru.se">Andras Persson</maintainer>
   <license>MIT</license>
 
   <test_depend>ament_copyright</test_depend>
