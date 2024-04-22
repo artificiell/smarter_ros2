@@ -25,7 +25,6 @@ def generate_launch_description():
         executable = 'showimage',
         name = 'image_viwever_1',
         remappings = [('image', 'camera1/image_raw')],
-        parameters = [{'autosize': True}]
     )
 
     # Gray scale converter node
@@ -44,7 +43,6 @@ def generate_launch_description():
         executable = 'showimage',
         name = 'image_viwever_2',
         remappings = [('image', 'camera1/gray_raw')],
-        parameters = [{'autosize': True}]
     )
     
     return LaunchDescription([

@@ -6,7 +6,7 @@
   <!-- First image viewer node -->
   <node pkg="image_tools" exec="showimage" name="image_viwever_1">
     <remap from="/image" to="/camera1/image_raw"/>
-    <param name="autosize" value="true"/>
+    <param name="window_name" value="Color image window"/>
   </node>
  
   <!-- Gray scale converter node -->
@@ -17,7 +17,7 @@
   <!-- Second image viewer node -->
   <node pkg="image_tools" exec="showimage" name="image_viwever_2">
     <remap from="/image" to="/camera1/gray_raw"/>
-    <param name="autosize" value="true"/>
+    <param name="window_name" value="Gray image window"/>
   </node>
 
 </launch>
