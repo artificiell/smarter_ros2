@@ -23,7 +23,7 @@ def generate_launch_description():
     image_viewer_1 = Node(
         package = 'image_tools',
         executable = 'showimage',
-        name = 'image_viwever_1',
+        name = 'image_viewer_1',
         remappings = [('image', 'camera1/image_raw')],
     )
 
@@ -41,7 +41,7 @@ def generate_launch_description():
     image_viewer_2 = Node(
         package = 'image_tools',
         executable = 'showimage',
-        name = 'image_viwever_2',
+        name = 'image_viewer_2',
         remappings = [('image', 'camera1/gray_raw')],
     )
     

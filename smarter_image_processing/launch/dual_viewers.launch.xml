@@ -4,13 +4,13 @@
   <include file="$(find-pkg-share usb_cam)/launch/camera.launch.py"/>
 
   <!-- First image viewer node -->
-  <node pkg="image_tools" exec="showimage" name="image_viwever_1">
+  <node pkg="image_tools" exec="showimage" name="image_viewer_1">
     <remap from="/image" to="/camera1/image_raw"/>
     <param name="window_name" value="First image window"/>
   </node>
 
   <!-- Second image viewer node -->
-  <node pkg="image_tools" exec="showimage" name="image_viwever_2">
+  <node pkg="image_tools" exec="showimage" name="image_viewer_2">
     <remap from="/image" to="/camera1/image_raw"/>
     <param name="window_name" value="Second image window"/>
   </node>
