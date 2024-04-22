@@ -24,12 +24,11 @@ def generate_launch_description():
         package = 'image_tools',
         executable = 'showimage',
         name = 'image_viwever_1',
-        remappings=[
-            ('image', 'camera1/image_raw')
-        ]
+        remappings = [('image', 'camera1/image_raw')],
+        parameters = [{'autosize': True}]
     )
 
-    # Gray scale convter  node
+    # Gray scale converter node
     gray_scale_convter = Node(
         package = 'smarter_image_processing',
         executable = 'gray_scale_converter',
@@ -44,9 +43,8 @@ def generate_launch_description():
         package = 'image_tools',
         executable = 'showimage',
         name = 'image_viwever_2',
-        remappings=[
-            ('image', 'camera1/gray_raw')
-        ]
+        remappings = [('image', 'camera1/gray_raw')],
+        parameters = [{'autosize': True}]
     )
     
     return LaunchDescription([

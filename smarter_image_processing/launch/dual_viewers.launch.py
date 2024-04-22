@@ -24,9 +24,8 @@ def generate_launch_description():
         package = 'image_tools',
         executable = 'showimage',
         name = 'image_viwever_1',
-        remappings=[
-            ('image', 'camera1/image_raw')
-        ]
+        remappings = [('image', 'camera1/image_raw')],
+        parameters = [{'autosize': True}]
     )
 
     # Second image viewer node
@@ -34,9 +33,8 @@ def generate_launch_description():
         package = 'image_tools',
         executable = 'showimage',
         name = 'image_viwever_2',
-        remappings=[
-            ('image', 'camera1/image_raw')
-        ]
+        remappings = [('image', 'camera1/image_raw')],
+        parameters = [{'autosize': True}]
     )
     
     return LaunchDescription([
