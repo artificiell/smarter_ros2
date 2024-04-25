@@ -1,0 +1,6 @@
+<launch>
+
+  <!-- Rviz node -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" args="-d $(find-pkg-share smarter_rviz)/config/turtlebot3.config.rviz" />
+
+</launch>
