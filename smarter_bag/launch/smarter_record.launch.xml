@@ -1,0 +1,9 @@
+<launch>
+
+  <!--  Broadcaster node -->
+  <node pkg="smarter_tf2" exec="broadcast_tf2" name="broadcast_transforms" />
+
+  <!--  Bag record -->
+  <executable cmd="ros2 bag record -o tf_bag /tf" output="screen" />
+    
+</launch>

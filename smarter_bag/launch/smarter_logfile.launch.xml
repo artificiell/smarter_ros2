@@ -1,0 +1,13 @@
+<launch>
+  
+  <!--  Bag replay -->
+  <executable cmd="ros2 bag play log_bag" output="screen" />
+
+  <!-- Static broadcaster node -->
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="static_tf" args="0 0 0 0 0 0 world base_link" /> 
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="static_tf" args="1 0 0 3.14159 0 0 base_link scan" /> 
+  
+  <!-- Rviz node --> 
+  <node pkg="rviz2" exec="rviz2" name="rviz2" args="-d $(find-pkg-share smarter_bag)/config/logfile_replay.config.rviz" />
+  
+</launch>

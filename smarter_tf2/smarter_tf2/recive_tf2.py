@@ -71,10 +71,6 @@ class DebugMarker(Node):
 
     def callback(self):
 
-        # Incase we're playing back data, wait until the /clock time is available.
-        #if rclpy.clock.Clock().now().to_msg().sec == 0:
-        #    return None
-
         # Query the /tf2 and find the pose between different frames and draw an arrow
         try:
             transform = self.query_transform('world', 't2')

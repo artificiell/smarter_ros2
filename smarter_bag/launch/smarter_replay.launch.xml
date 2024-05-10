@@ -1,0 +1,12 @@
+<launch>
+  
+  <!--  Bag replay -->
+  <executable cmd="ros2 bag play tf_bag" output="screen" />
+
+  <!--  Reciver node -->
+  <node pkg="smarter_tf2" exec="recive_tf2" name="recive_transforms" />
+  
+  <!-- Rviz node -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" args="-d $(find-pkg-share smarter_tf2)/config/transforms.config.rviz" />
+  
+</launch>
